@@ -1,0 +1,4 @@
+微信公众平台java开发详解（工程代码+解析）
+
+http://blog.csdn.net/pamchen/article/details/38718947
+
