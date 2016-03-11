@@ -25,6 +25,8 @@ public class WechatServlet extends HttpServlet{
 
 	    public void doGet(HttpServletRequest request, HttpServletResponse response)
 	            throws ServletException, IOException {
+	    	
+	    	System.out.println("123456");
 	        // 微信加密签名
 	        String signature = request.getParameter("signature");
 	        // 随机字符串
