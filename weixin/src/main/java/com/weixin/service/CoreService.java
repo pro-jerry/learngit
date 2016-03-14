@@ -5,7 +5,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.weixin.message.resp.TextMessage;
+import com.weixin.message.req.TextMessage;
 import com.weixin.util.MessageUtil;
 
 /**

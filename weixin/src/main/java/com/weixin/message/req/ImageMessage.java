@@ -1,15 +1,19 @@
 package com.weixin.message.req;
 
-public class ImageMessage extends BaseMessage{
+/**
+ * 图片消息
+ * @author HJ
+ *
+ */
+public class ImageMessage extends BaseMessage {
+	// 图片链接
+	private String PicUrl;
 
-		// 图片链接
-		private String PicUrl;
+	public String getPicUrl() {
+		return PicUrl;
+	}
 
-		public String getPicUrl() {
-			return PicUrl;
-		}
-
-		public void setPicUrl(String picUrl) {
-			PicUrl = picUrl;
-		}
+	public void setPicUrl(String picUrl) {
+		PicUrl = picUrl;
+	}
 }

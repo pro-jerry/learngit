@@ -1,14 +1,14 @@
-package com.weixin.message.req;
+package com.weixin.message.resp;
 
 /**
- * 视频消息
+ * 视频model
  * @author HJ
  *
  */
-public class VideoMessage extends BaseMessage {
-	// 视频消息媒体id
+public class Video {
+	// 媒体文件id
 	private String MediaId;
-	// 视频消息缩略图的媒体id
+	// 缩略图的媒体id
 	private String ThumbMediaId;
 
 	public String getMediaId() {

@@ -17,12 +17,12 @@ import com.thoughtworks.xstream.core.util.QuickWriter;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 import com.thoughtworks.xstream.io.xml.PrettyPrintWriter;
 import com.thoughtworks.xstream.io.xml.XppDriver;
+import com.weixin.message.req.TextMessage;
 import com.weixin.message.req.VideoMessage;
 import com.weixin.message.resp.Article;
 import com.weixin.message.resp.ImageMessage;
 import com.weixin.message.resp.MusicMessage;
 import com.weixin.message.resp.NewsMessage;
-import com.weixin.message.resp.TextMessage;
 import com.weixin.message.resp.VoiceMessage;
 
 
@@ -117,7 +117,6 @@ public class MessageUtil {
 					// 对所有xml节点的转换都增加CDATA标记
 					boolean cdata = true;
 
-					@SuppressWarnings("unchecked")
 					public void startNode(String name, Class clazz) {
 						super.startNode(name, clazz);
 					}

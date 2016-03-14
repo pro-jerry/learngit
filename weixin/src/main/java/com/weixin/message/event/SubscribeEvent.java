@@ -5,6 +5,6 @@ package com.weixin.message.event;
  * @author HJ
  *
  */
-public class SubscribeEvent extends BaseEvent{
+public class SubscribeEvent extends BaseEvent {
 
 }
