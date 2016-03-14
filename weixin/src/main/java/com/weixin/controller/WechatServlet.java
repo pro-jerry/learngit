@@ -8,8 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.weixin.util.SHA1;
-
 
 /**
  * 微信服务端收发消息接口 
@@ -19,7 +17,7 @@ import com.weixin.util.SHA1;
 @SuppressWarnings("serial")
 public class WechatServlet extends HttpServlet{
 
-	
+		
 		// 自定义 token
 	    private String TOKEN = "weixin";
 
@@ -39,13 +37,15 @@ public class WechatServlet extends HttpServlet{
 	        String[] str = { TOKEN, timestamp, nonce };
 	        Arrays.sort(str); // 字典序排序
 	        String bigStr = str[0] + str[1] + str[2];
+	        
+	        
 	        // SHA1加密
-	        String digest = new SHA1().getDigestOfString(bigStr.getBytes()).toLowerCase();
+//	        String digest = new SHA1().getDigestOfString(bigStr.getBytes()).toLowerCase();
 
 	        // 确认请求来至微信
-	        if (digest.equals(signature)) {
-	            response.getWriter().print(echostr);
-	        }
+//	        if (digest.equals(signature)) {
+//	            response.getWriter().print(echostr);
+//	        }
         
 		
 	}
