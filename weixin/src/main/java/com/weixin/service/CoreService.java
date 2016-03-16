@@ -40,27 +40,29 @@ public class CoreService {
 
 					// 文本消息
 					if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) {
-						respContent = "您发送的是文本消息！";
+						if(respContent.matches("登陆")){
+							respContent = "登陆链接http://123.56.148.175:9003/servlet/index.jsp#getWithDrawLog";
+						}
 					}
 					// 图片消息
 					else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_IMAGE)) {
-						respContent = "您发送的是图片消息！";
+//						respContent = "您发送的是图片消息！";
 					}
 					// 语音消息
 					else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_VOICE)) {
-						respContent = "您发送的是语音消息！";
+//						respContent = "您发送的是语音消息！";
 					}
 					// 视频消息
 					else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_VIDEO)) {
-						respContent = "您发送的是视频消息！";
+//						respContent = "您发送的是视频消息！";
 					}
 					// 地理位置消息
 					else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_LOCATION)) {
-						respContent = "您发送的是地理位置消息！";
+//						respContent = "您发送的是地理位置消息！";
 					}
 					// 链接消息
 					else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_LINK)) {
-						respContent = "您发送的是链接消息！";
+//						respContent = "您发送的是链接消息！";
 					}
 					// 事件推送
 					else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_EVENT)) {
