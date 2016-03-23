@@ -1,0 +1,314 @@
+
+.lr-tips {
+	height: 57px; line-height: 57px;
+	padding: 10px 0;
+	font-size: 18px; color: #12a5fa;
+}
+.lr-tips .lr-tips-photo, 
+.lr-tips img {
+	float: left;
+	width: 57px; height: 57px;
+	border-radius: 50%;
+}
+
+/* case-select */
+.case-select {
+	border: 1px solid #d9d9d9;
+	background-color: #fff;
+}
+.case-select li {
+	height: 49px; line-height: 49px;
+	padding: 0 15px 0 10px;
+	border-bottom: 1px solid #d9d9d9;
+	font-size: 16px; color: #999;
+}
+.case-select li:last-child { border-bottom: none; }
+.case-select li span { color: #333; margin-left: 5px; }
+.case-select li .i-pub4 {
+	float: right;
+	margin-top: 18px;
+}
+
+/* consult-tab */
+.consult-tab {
+	position: relative;
+	margin-top: 40px;
+	padding: 0 20px 60px;
+}
+.consult-line {
+	height: 45px;
+	border-bottom: 5px solid #e6e6e6;
+}
+.consult-select {
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.consult-select span {
+	float: left;
+	width: 33.33%;
+	font-size: 14px;
+	color: #ccc4c4;
+}
+.consult-select a {
+	display: inline-block;
+	width: 48px; height: 48px; line-height: 48px;
+	background-color: #fff;
+	border:1px solid #d9d9d9;
+	border-radius: 50%;
+	text-align: center;
+	margin-top: 5px;
+}
+.consult-select span.consult-click { color: #12a5fa; }
+.consult-select span.consult-click .i-pub24 { background-position: -78px -322px; }
+.consult-select span.consult-click .i-pub25 { background-position: -105px -322px; }
+.consult-select span.consult-click .i-pub26 { background-position: -133px -322px; }
+
+
+/* 登陆、注册、忘记密码 */
+.login-logo {
+	padding: 30px 0;
+	height: 90px;
+	text-align:center;
+}
+.login-logo img {
+	width: 90px; height: 90px;
+}
+	/**/
+.login-fm {
+	border-top: 1px solid #d9d9d9;
+	background-color: #fff;
+}
+.login-fm li {
+	position: relative;
+	height: 44px; line-height: 44px;
+	padding: 0 15px 0 40px;
+	border-bottom: 1px solid #d9d9d9;
+	font-size: 14px;
+}
+.login-fm li .icon-public {
+	position: absolute;
+	left: 15px; top: 13px;
+}
+	/*login-fm2*/
+.login-fm2 li { padding-left: 90px; }
+.login-fm2 li span {
+	position: absolute;
+	left: 15px; top: 0;
+	font-size: 14px; color: #999;
+}
+/* 侧滑：用户操作列表 popup-left-user */
+.popup-left-user {
+	position: fixed;
+	left: 0; top: 0; right: 0; bottom: 0;
+	width: 100%; height: 100%;
+	background:rgba(0,0,0,.5);
+	z-index: 1000;
+	-webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+	display: none;
+}
+.i-pub39 {
+	position: absolute;
+	top: 5px; right: 2%;
+	cursor: pointer;
+}
+.popup-left-user .popup-user-bar {
+	position: absolute;
+	left: 0; top: 0;
+	width: 85%; height: 100%;
+	background-color: #fff;
+	-webkit-transform: translateX(-100%);
+	    -ms-transform: translateX(-100%);
+	        transform: translateX(-100%);
+	-webkit-transition: -webkit-transform .2s;
+	        transition: -webkit-transform .2s;
+}
+.popup-left-user .popup-user-bar-block {
+		-webkit-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	        transform: translateX(0);
+}
+.user-photo {
+	display: block;
+	text-align: center;
+	padding: 25px 0;
+	border-bottom: 1px solid #d9d9d9;
+}
+.user-photo img {
+	width: 56px; height: 56px;
+	border-radius: 50%;
+}
+.user-photo p {
+	font-size: 14px;
+	color: #999;
+	margin-top: 5px;
+}
+	/* user-list */
+.user-list li {
+	height: 44px;
+	border-bottom: 1px solid #d9d9d9;
+	background-color: #fff;
+}
+.user-list li a {
+	display: block; 
+	padding: 0 30px 0 15px;
+	font-size: 16px; line-height: 44px;
+}
+.user-list li a .icon-public {
+	float: left;
+	margin: 12px 10px 0 0;
+}
+.user-list li a span {
+	float: right;
+	font-size: 12px;
+	color: #999;
+}
+
+/* 弹框：预约时间 popup-timer */
+.popup-timer, .popup-minute {
+	position: fixed;
+	left: 0; right: 0; bottom: -100%;
+	background-color: #fff;
+	z-index: 1003;
+}
+.pop-timer-title {
+	height: 52px; line-height: 52px;
+	border-bottom: 1px solid #d9d9d9;
+	font-size: 16px;
+}
+.pop-timer-title a { padding: 0 15px; }
+.pop-timer-day {
+	height: 39px; line-height: 39px;
+	border-bottom: 1px solid #d9d9d9;
+}
+.pop-timer-day span {
+	float: left;
+	width: 25%; 
+	border-right: 1px solid #d9d9d9;
+	font-size: 14px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.pop-timer-day span.s-be { font-weight: bold; }
+.pop-timer-day span:last-child{ border-right: none; }
+.pop-timer-list { display: none; }
+.pop-timer-list li {
+	float: left;
+	width: 25%; height: 69px; 
+	border-right: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	font-size: 14px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.pop-timer-list li a {
+	display: block;
+	height: 69px;
+	color: #12a5fa;
+}
+.pop-timer-list li p { font-size: 16px; padding-top: 15px; }
+.pop-timer-list li.timer-list-full a { color:#999; }
+.pop-timer-list li.timer-list-my a {
+	background-color: #ff9600;
+	color: #fff;
+}
+
+/* 弹框：具体时间选择  */
+.popup-minute { bottom: 0; }
+
+.minute-select {
+	position: relative;
+	float: left;
+	width: 33.33%; height: 250px;
+}
+.minute-select ul {
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%;
+}
+.minute-select ul li {
+	height: 49px; line-height: 49px;
+	border-bottom: 1px solid #d9d9d9;
+	font-size: 16px; text-align: center;
+	color: #ccc;
+}
+
+/* 弹框：案件类型 popup-case-type */
+.popup-case-type {
+	position: fixed;
+	left:0; top:0; right:0;
+	width: 100%;
+	background-color: #f2f2f2;
+	z-index: 1005;
+}
+.case-type-list { 
+	background-color: #fff; 
+	border-top: 1px solid #d9d9d9;
+}
+.case-type-list li {
+	height: 47px; line-height: 47px;
+	font-size: 14px;
+	border-bottom: 1px solid #d9d9d9;
+}
+.case-type-list li a {
+	display: block;
+	line-height: 47px;
+	padding: 0 15px;
+}
+.case-type-list li .i-pub3 {
+	float: right;
+	margin-top: 17px;
+	display: none;
+}
+.case-type-list li.case-list-click a { color: #12a5fa; }
+.case-type-list li.case-list-click .i-pub3 { display: block; }
+
+.case-type-nav {
+	height: 47px; line-height: 47px;
+	padding: 0 15px;
+	font-size: 14px;
+	border-bottom: 1px solid #d9d9d9;
+}
+.case-type-nav .i-pub6 {
+	float: right;
+	margin-top: 19px;
+}
+.case-type-all .case-type-list { display: none; }
+
+/* pop-text */
+.pop-text {
+	position: fixed;
+	left:0; top:50%; right:0;
+	z-index: 1005; margin-top:-115px;
+	padding:0 15px;
+}
+.pop-text .u-text-bar {
+	padding:10px;
+	background-color:#fff;
+}
+.pop-text .u-text-bar textarea {
+	width:100%; min-height:145px; line-height:24px;
+	font-size:15px;
+	overflow-y:scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

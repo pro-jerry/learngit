@@ -1,0 +1,136 @@
+.zc-list {
+	border-top: 1px solid #d9d9d9;
+	background-color: #fff;
+}
+.zc-list a {
+	float: left;
+	width: 25%; height:104px;
+	border-right: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	font-size: 15px; color: #666; text-align: center;
+}
+.zc-list a p { 
+	height: 29px; line-height: 29px;
+	padding: 25px 0 7px;
+}
+
+/* lawyer-bg */
+.lawyer-bg {
+	background-color: #12a5fa;
+	text-align: center;
+}
+.lawyer-bg .top-nav {
+	background:none;
+	border: none;
+}
+.lawyer-infor {
+	padding: 20px 0;
+	color: #fff;
+}
+
+.lawyer-infor .lr-photo {
+	height: 84px;
+}
+.lawyer-infor .lr-photo a,
+.lawyer-infor .lr-photo a img {
+	display: inline-block;
+	width: 82px; height: 82px;
+	border-radius: 50%;
+}
+.lawyer-infor .lr-photo a {
+	border:1px solid #fff;
+}
+.lawyer-infor .lr-renzheng {
+	display: inline-block;
+	height: 20px; padding: 0 10px;
+	background: #199ce9;
+	border-radius: 10px;
+}
+.lr-gift {
+	padding: 20px 30px;
+	height: 36px;
+	background-color: #199ce9;
+}
+.lr-gift a {
+	height: 34px; line-height: 34px;
+	border:1px solid #fff; border-radius: 17px;
+	padding: 0 20px;
+	font-size: 16px; color: #fff;
+}
+.lr-gift a .icon-puadd {
+	float: left;
+	margin: 9px 8px 0 0;
+}
+
+/* */
+.fuwu-pj, .fuwu-zhuanz {
+	height: 54px; line-height: 54px;
+	padding: 0 15px;
+	border-bottom: 1px solid #d9d9d9;
+	background-color: #fff;
+}
+.fuwu-pj span {
+	float: left;
+	font-size: 16px; color: #999; 
+	margin-right: 10px;
+}
+.fuwu-zhuanz { 
+	font-size: 14px; color: #999; 
+	overflow: hidden;
+}
+.fuwu-zhuanz .i-pub4 {
+	float: right;
+	margin: 20px 0 0 20px;
+}
+/**/
+.fuwu-list-bar {
+	padding: 0 15px;
+	background-color: #fff;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+}
+.fuw-bt {
+	height: 40px; line-height: 40px;
+	border-bottom: 1px solid #d9d9d9;
+	font-size: 16px;
+}
+.fuwu-list a {
+	display: block;
+	border-bottom: 1px solid #d9d9d9;
+	height: 48px;
+	padding: 12px 0;
+}
+.fuwu-list-bar a:last-child {
+	border-bottom: none;
+}
+.fuwu-list a .icon-puadd {
+	float: left;
+	line-height: 48px;
+	margin-right: 10px;
+}
+.fuwu-list a .f16 {
+	height: 28px; line-height: 28px;
+}
+.fuwu-list a .f16 span {
+	font-size: 14px; line-height: 26px;
+	color: #ff9600;
+}
+.fuwu-list a .f16 span em {
+	font-size: 16px;
+}
+.fuwu-list a .f14 {
+	font-size: 14px;
+	color: #666;
+}
+/**/
+.user-pj li {
+	padding: 5px 0 10px;
+}
+.user-pj li .user-td {
+	height: 30px; line-height: 30px;
+	font-size: 14px; color: #999;
+}
+.user-pj li .user-zx {
+	font-size: 14px; color: #999;
+	margin-top: 5px;
+}

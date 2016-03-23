@@ -40,17 +40,24 @@ public class CoreService {
 
 					// 文本消息
 					if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) {
-						if(respContent.matches("登陆")){
-							respContent = "登陆链接http://123.56.148.175:9003/servlet/index.jsp#getWithDrawLog";
-						}
+						
+						String content = request.getParameter("Content");
+						
+						respContent = "您发送的是wenben消息！";
+//						if(false==content.contains("登录")){
+//							respContent = "登录链接";
+//						}else{
+//							
+//							respContent="登录http://123.56.148.175:9003/servlet/index.jsp#getWithDrawLog";
+//						}
 					}
 					// 图片消息
 					else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_IMAGE)) {
-//						respContent = "您发送的是图片消息！";
+						respContent = "您发送的是图片消息！";
 					}
 					// 语音消息
 					else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_VOICE)) {
-//						respContent = "您发送的是语音消息！";
+						respContent = "您发送的是语音消息！";
 					}
 					// 视频消息
 					else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_VIDEO)) {
