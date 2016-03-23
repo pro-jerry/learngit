@@ -27,6 +27,15 @@
   </servlet-mapping>
   
   <servlet>
+  	<servlet-name>oauthServlet</servlet-name>
+  	<servlet-class>com.weixin.controller.OAuthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>oauthServlet</servlet-name>
+  	<url-pattern>/oauthServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
   	<servlet-name>coreServlet</servlet-name>
   	<servlet-class>com.weixin.controller.CoreServlet</servlet-class>
   </servlet>

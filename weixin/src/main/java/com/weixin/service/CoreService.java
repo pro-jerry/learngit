@@ -43,13 +43,12 @@ public class CoreService {
 						
 						String content = request.getParameter("Content");
 						
-						respContent = "您发送的是wenben消息！";
-//						if(false==content.contains("登录")){
-//							respContent = "登录链接";
-//						}else{
-//							
-//							respContent="登录http://123.56.148.175:9003/servlet/index.jsp#getWithDrawLog";
-//						}
+						respContent = "https://open.weixin.qq.com/connect/oauth2/authorize?"
+									+ "appid=wx07719f29f83171b6"
+									+ "&redirect_uri=http%3A%2F%2Fprojerry.duapp.com%2FoauthServlet"
+									+ "&response_type=code"
+									+ "&scope=snsapi_userinfo"
+									+ "&state=STATE#wechat_redirect";
 					}
 					// 图片消息
 					else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_IMAGE)) {

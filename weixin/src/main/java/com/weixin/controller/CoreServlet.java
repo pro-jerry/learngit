@@ -27,18 +27,14 @@ public class CoreServlet extends HttpServlet{
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 微信加密签名
 		String signature = request.getParameter("signature");
-		request.getSession(true).setAttribute("signature", signature);
 		
 		// 时间戳
 		String timestamp = request.getParameter("timestamp");
-		request.getSession(true).setAttribute("timestamp", timestamp);
 		
 		// 随机数
 		String nonce = request.getParameter("nonce");
-		request.getSession(true).setAttribute("nonce", nonce);
 		// 随机字符串
 		String echostr = request.getParameter("echostr");
-		request.getSession(true).setAttribute("echostr", echostr);
 
 		PrintWriter out = response.getWriter();
 		// 请求校验，若校验成功则原样返回echostr，表示接入成功，否则接入失败
